@@ -139,7 +139,7 @@ nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:col
 <div class="bar"><div><div style="font-size:12px;color:var(--mut)" data-t="కాపీ ధర">Per copy</div><b>₹120</b></div><a class="btn wa" data-wa href="#" data-t="వాట్సాప్‌లో ఆర్డర్">Order on WhatsApp</a></div>
 
 <script>
-const CFG={wa:'919000040091',price:120,upi:'rajkumar.racheti@ybl',payee:'Raj Kumar Racheti',yt:''}; // yt = YouTube video ID, e.g. 'dQw4w9WgXcQ'
+const CFG={wa:'919000040091',price:120,upi:'rajkumar.racheti@ybl',payee:'Raj Kumar Racheti',yt:''}; // yt = YouTube video ID, e.g. 'KUD7icCf8Cw'
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],q=$('#q'),get=k=>{try{return localStorage.getItem(k)}catch(e){return null}},put=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
 let L='en';$$('[data-t]').forEach(e=>e.dataset.e=e.innerHTML);$$('[data-pt]').forEach(e=>e.dataset.pe=e.placeholder);
 function fillQ(){const v=q.value||1;q.innerHTML='';for(let i=1;i<=20;i++)q.add(new Option(L=='te'?i+(i>1?' కాపీలు':' కాపీ'):i+(i>1?' copies':' copy'),i));q.value=v}
