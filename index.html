@@ -164,6 +164,7 @@ addEventListener('scroll',sc,{passive:true});sc();
 // lightbox
 const lb=$('#lb');$$('.gal img').forEach(i=>i.onclick=()=>{lb.firstChild.src=i.src;lb.classList.add('on')});lb.onclick=()=>lb.classList.remove('on');addEventListener('keydown',e=>e.key=='Escape'&&lb.classList.remove('on'));
 // YouTube launch video (set CFG.yt)
+ if(CFG.yt){const u=`https://img.youtube.com/vi/${CFG.yt}/`,im=new Image();im.onload=()=>$('#vid').style.background=`center/cover url(${u}${im.naturalWidth>200?'maxresdefault':'hqdefault'}.jpg)`;im.src=u+'maxresdefault.jpg'}
 $('#pv').onclick=()=>{if(!CFG.yt){$('#vt').textContent=L=='te'?'వీడియో త్వరలో వస్తుంది':'Launch video coming soon';return}$('#vid').innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${CFG.yt}?autoplay=1&rel=0" title="Book launch video" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>`};
 // gold dust
 const cv=$('#pc'),cx=cv.getContext('2d');let P=[];function rs(){cv.width=cv.offsetWidth;cv.height=cv.offsetHeight;P=Array.from({length:36},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*2+.8,s:Math.random()*.4+.15}))}rs();addEventListener('resize',rs);
