@@ -49,10 +49,8 @@ h2{font-size:clamp(26px,4.2vw,44px);margin-bottom:12px}
 @keyframes sh{to{background-position:200%}}
 .lead{color:var(--mut);font-size:17px;max-width:680px}.c{text-align:center}.c .lead{margin:0 auto}
 
-/* Top Scroll Progress */
 #sp{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--riv),var(--gold2));z-index:90;transition:width .1s linear}
 
-/* Nav */
 nav{position:sticky;top:0;z-index:70;backdrop-filter:blur(16px);background:var(--nav);border-bottom:1px solid var(--ln);padding-top:env(safe-area-inset-top,0px)}
 nav .w{display:flex;align-items:center;justify-content:space-between;height:66px;gap:10px}
 .logo{font:800 17px "Playfair Display","Noto Sans Telugu",serif;color:var(--gold);display:flex;align-items:center;gap:6px;white-space:nowrap}
@@ -63,12 +61,10 @@ nav li a{white-space:nowrap}nav li a:hover{color:var(--gold)}
 .ib:hover{border-color:var(--gold)}
 #mb{display:none}
 
-/* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;border:0;cursor:pointer;font:700 15px Inter,"Noto Sans Telugu",sans-serif;transition:.25s;min-height:46px}
 .wa{background:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(31,168,85,.35)}.wa:hover{transform:translateY(-2px);filter:brightness(1.06)}
 .gh{border:1.5px solid var(--gold);color:var(--gold);background:transparent}.gh:hover{background:rgba(217,164,65,.14)}
 
-/* Hero + 3D Floating Sacred Rings */
 .hero{padding:54px 0 126px;overflow:hidden;position:relative;background:radial-gradient(900px 520px at 78% 0,rgba(255,214,130,.52),transparent 65%)}
 html[data-th=night] .hero{background:radial-gradient(900px 520px at 78% 0,rgba(232,187,92,.18),transparent 65%)}
 .rays{position:absolute;inset:-20% -10% auto auto;width:90%;height:120%;transform-origin:70% 0;background:repeating-conic-gradient(from 160deg at 70% 0,rgba(255,214,130,.24) 0 5deg,transparent 5deg 14deg);-webkit-mask:radial-gradient(circle at 70% 0,#000,transparent 68%);mask:radial-gradient(circle at 70% 0,#000,transparent 68%);animation:sw 14s ease-in-out infinite;pointer-events:none}
@@ -89,7 +85,7 @@ html[data-th=night] .hero{background:radial-gradient(900px 520px at 78% 0,rgba(2
 .cta{display:flex;flex-wrap:wrap;gap:10px}
 .tr{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;color:var(--mut);font-size:13px;font-weight:500}
 
-/* Enhanced 3D Book + Page Depth + Halo */
+/* 3D Book */
 .stage{perspective:1600px;display:grid;place-items:center;padding:18px 0;position:relative}
 .halo{position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(217,164,65,.38),transparent 70%);filter:blur(18px);pointer-events:none;animation:pulseH 5s ease-in-out infinite}
 @keyframes pulseH{50%{transform:scale(1.12);opacity:.75}}
@@ -111,7 +107,7 @@ html[data-th=night] .hero{background:radial-gradient(900px 520px at 78% 0,rgba(2
 @keyframes wv{to{transform:translateX(-50%)}}
 .wv path{fill:var(--bg2)}
 
-/* Grids & 3D Tilt Cards */
+/* Grids & Cards */
 .grid{display:grid;gap:20px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr}
 .card{background:var(--sf);border:1px solid var(--ln);border-radius:22px;padding:26px;box-shadow:0 12px 32px -18px var(--sh);transition:transform .3s ease,border-color .3s,box-shadow .3s;transform-style:preserve-3d}
 .card:hover{border-color:var(--gold);box-shadow:0 22px 44px -20px var(--sh)}
@@ -130,7 +126,7 @@ html[data-th=night] .hero{background:radial-gradient(900px 520px at 78% 0,rgba(2
 .verse q{font:italic 600 20px "Playfair Display","Noto Sans Telugu",serif;color:var(--ink);quotes:none}
 .verse small{display:block;margin-top:8px;color:var(--gold);font-weight:700}
 
-/* Launch Pastors Showcase & 3D Dual Video Theater */
+/* Launch Pastors & Videos */
 .pastor-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
 .p-card{background:var(--sf);border:1px solid var(--ln);border-radius:22px;overflow:hidden;box-shadow:0 18px 42px -22px var(--sh);cursor:zoom-in;transition:.35s;transform-style:preserve-3d}
 .p-card:hover{transform:translateY(-6px);border-color:var(--gold)}
@@ -147,22 +143,22 @@ html[data-th=night] .hero{background:radial-gradient(900px 520px at 78% 0,rgba(2
 .vid-box{position:relative;width:100%;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#17243d,#3c2910);display:grid;place-items:center;color:#fff;text-align:center}
 .vid-16x9{aspect-ratio:16/9;box-shadow:0 18px 36px -14px rgba(0,0,0,.45)}
 .vid-9x16{aspect-ratio:9/16;max-width:300px;margin:0 auto;border:6px solid #1b1611;border-radius:28px;box-shadow:0 28px 50px -16px rgba(0,0,0,.55)}
-.vid-box img.v-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.75;transition:.3s}
-.vid-box:hover img.v-thumb{opacity:.9;transform:scale(1.03)}
-.v-ov{position:relative;z-index:2;padding:16px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
-.vid-box iframe,.vid-box video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.vid-box img.v-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8;transition:.3s}
+.vid-box:hover img.v-thumb{opacity:.95;transform:scale(1.03)}
+.v-ov{position:relative;z-index:2;padding:16px;text-shadow:0 2px 12px rgba(0,0,0,.75)}
+.vid-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.v-link{margin-top:10px;text-align:center;font-size:12px;color:var(--gold);font-weight:600}
+.v-link a:hover{text-decoration:underline}
 .pb{width:74px;height:74px;border-radius:50%;border:0;background:var(--gold2);color:#241408;font-size:26px;cursor:pointer;display:grid;place-items:center;margin:0 auto;animation:pu2 2s infinite;transition:.2s}
 .pb:hover{transform:scale(1.08)}
 @keyframes pu2{0%{box-shadow:0 0 0 0 rgba(255,217,138,.65)}70%{box-shadow:0 0 0 20px transparent}}
 
-/* Gallery */
 .gal{grid-template-columns:repeat(3,1fr);align-items:start}
 .gal figure{margin:0;cursor:zoom-in}
 .gal img{border-radius:16px;border:1px solid var(--ln);box-shadow:0 18px 40px -22px var(--sh);transition:.3s;width:100%}
 .gal figure:hover img{transform:scale(1.03)}
 .gal figcaption{text-align:center;font-size:13px;color:var(--mut);margin-top:10px}
 
-/* River Timeline + Reading Tracker */
 .prog-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:var(--sf);border:1px solid var(--ln);margin-top:14px;font-size:13px;font-weight:700;color:var(--gold)}
 .tl{position:relative;max-width:840px;margin:40px auto 0;padding-left:56px}
 .tl::before{content:"";position:absolute;left:19px;top:0;bottom:0;width:4px;border-radius:4px;background:var(--ln)}
@@ -176,7 +172,6 @@ html[data-th=night] .hero{background:radial-gradient(900px 520px at 78% 0,rgba(2
 .chk-btn{border:1px solid var(--ln);background:var(--bg);color:var(--mut);border-radius:999px;padding:5px 13px;font:600 12px Inter,"Noto Sans Telugu";cursor:pointer;transition:.2s}
 .chk-btn.done{background:var(--wa);border-color:var(--wa);color:#fff}
 
-/* Author */
 .au{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
 .au img{border-radius:20px;border:1px solid var(--ln);box-shadow:0 30px 60px -26px var(--sh)}
 .ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
@@ -193,7 +188,7 @@ input,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid va
 input:focus,select:focus,button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .gift-box{margin-top:14px;padding:14px;border:1.5px dashed var(--gold);border-radius:14px;background:rgba(217,164,65,.08)}
 .gift-toggle{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;cursor:pointer}
-.gift-toggle input{width:18px;height:18px;accent-color:var(--gold);flex-shrink:0}
+.gift-toggle input{width:20px;height:20px;accent-color:var(--gold);flex-shrink:0}
 .sum-box{margin:18px 0 10px;padding-top:14px;border-top:1px dashed var(--ln);display:grid;gap:6px;font-size:14px}
 .sum-row{display:flex;justify-content:space-between;color:var(--mut)}
 .sum-grand{display:flex;justify-content:space-between;align-items:baseline;margin-top:6px;padding-top:8px;border-top:1px solid var(--ln);font-weight:700}
@@ -359,7 +354,7 @@ footer{border-top:1px solid var(--ln);padding:40px 0 110px;color:var(--mut);font
     <div class="pastor-grid">
       <div class="p-card tilt rv" onclick="openLb(this.querySelector('img')?.src)">
         <div class="p-img">
-          <img src="launch-pastors-1.JPG" alt="Senior pastors standing and launching the book" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='launch-pastors-1.jpg'}">
+          <img src="launch-pastors-1.JPG" alt="Senior pastors standing and launching the book" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='launch-pastors-1.jpg'}">
         </div>
         <div class="p-cap">
           <div><strong data-t="సీనియర్ పాస్టర్ల చేతుల మీదుగా ఆవిష్కరణ">Official Launch by Senior Pastors</strong><span data-t="రచయిత 40 ఏళ్ల పరిచర్య ఫలం">Celebrating 40+ years of faithful ministry</span></div>
@@ -368,7 +363,7 @@ footer{border-top:1px solid var(--ln);padding:40px 0 110px;color:var(--mut);font
       </div>
       <div class="p-card tilt rv" style="--i:1" onclick="openLb(this.querySelector('img')?.src)">
         <div class="p-img">
-          <img src="launch-pastors-2.JPG" alt="Pastors holding the Telugu book" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='launch-pastors-2.jpg'}">
+          <img src="launch-pastors-2.JPG" alt="Pastors holding the Telugu book" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='launch-pastors-2.jpg'}">
         </div>
         <div class="p-cap">
           <div><strong data-t="“ఉచిత కాపీలు కాకుండా కొని చదవండి!”">“Buy &amp; Honor the Author’s Work”</strong><span data-t="ప్రతి క్రైస్తవ గృహంలో ఉండాల్సిన గ్రంథం">A cherished spiritual resource for every home</span></div>
@@ -389,6 +384,7 @@ footer{border-top:1px solid var(--ln);padding:40px 0 110px;color:var(--mut);font
             <p style="margin:12px 0 0;font-weight:700;font-size:15px" data-t="ఆవిష్కరణ వీడియో చూడండి">Play Book Launch Video</p>
           </div>
         </div>
+        <div class="v-link"><a href="https://youtu.be/KUD7icCf8Cw" target="_blank" rel="noopener" data-t="YouTube లో తెరవండి ↗">Open on YouTube ↗</a></div>
       </div>
 
       <div class="v-wrap rv" style="--i:1">
@@ -402,6 +398,7 @@ footer{border-top:1px solid var(--ln);padding:40px 0 110px;color:var(--mut);font
             <p style="margin:12px 0 0;font-weight:700;font-size:14px" data-t="షార్ట్ వీడియో చూడండి">Play Vertical Short</p>
           </div>
         </div>
+        <div class="v-link"><a href="https://youtube.com/shorts/ibNgjX238PQ" target="_blank" rel="noopener" data-t="YouTube Shorts లో తెరవండి ↗">Open Shorts on YouTube ↗</a></div>
       </div>
     </div>
   </div>
@@ -630,7 +627,6 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const get=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
 const put=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
 
-// Language Engine
 let L='en';
 $$('[data-t]').forEach(e=>e.dataset.e=e.innerHTML);
 $$('[data-pt]').forEach(e=>e.dataset.pe=e.placeholder);
@@ -659,7 +655,6 @@ function upd(){
   $('#barTot').textContent = '₹' + tot.toLocaleString('en-IN');
   $('#upAmt').textContent = '₹' + tot.toLocaleString('en-IN');
 
-  // Update right-side Payment card summary & UPI link live
   if(L=='te'){
     $('#payMsg').textContent = isGift
       ? `పుస్తకం ₹${bookCost} + కొరియర్ ₹${courCost} + గిఫ్ట్ ప్యాకింగ్ ₹${giftCost}`
@@ -673,7 +668,6 @@ function upd(){
   }
   $('#up').href = `upi://pay?pa=${CFG.upi}&pn=${encodeURIComponent(CFG.payee)}&am=${tot}&cu=INR&tn=${encodeURIComponent('Book x'+n+(isGift?' + Gift':''))}`;
 
-  // Update quick pack pills cleanly
   $$('.pack').forEach(p=>{
     const pq = +p.dataset.q;
     p.classList.toggle('on', pq===n);
@@ -721,7 +715,9 @@ $('#mb').onclick=()=>$('#mn').classList.toggle('open');
 $$('#mn a').forEach(a=>a.onclick=()=>$('#mn').classList.remove('open'));
 
 $$('.pack').forEach(b=>b.onclick=()=>{ $('#q').value=b.dataset.q; upd(); });
-$('#isGift').onchange=()=>{ $('#giftFields').style.display = $('#isGift').checked ? 'block' : 'none'; upd(); };
+const toggleGift = () => { $('#giftFields').style.display = $('#isGift').checked ? 'block' : 'none'; upd(); };
+$('#isGift').addEventListener('change', toggleGift);
+$('#isGift').addEventListener('input', toggleGift);
 ['#n','#ph','#addr','#c','#q','#gName','#utr'].forEach(s=>$(s).addEventListener('input',upd));
 
 $('#uid').textContent=CFG.upi; $('#upn').textContent=CFG.payee;
@@ -732,12 +728,10 @@ $('#cp').onclick=e=>{
   setTimeout(()=>e.target.textContent=o, 1800);
 };
 
-// Share buttons
 const shareMsg = () => '🙏 "సెలయేరు నుండి జీవజల నది వరకు" — ఆదికాండము నుండి ప్రకటన వరకు దేవుని విమోచన ప్రణాళిక (21 అధ్యాయాలు). ధర: ₹120 + కొరియర్ ₹80 (₹200).\nఆర్డర్ చేయండి: ' + location.href;
 $('#shr').onclick=e=>{ e.preventDefault(); open('https://wa.me/?text='+encodeURIComponent(shareMsg()),'_blank'); };
 $('#shrVerse').onclick=()=>{ open('https://wa.me/?text='+encodeURIComponent('“జీవజల నది దేవుని సింహాసనం నుండి ప్రవహిస్తోంది.” (ప్రకటన 22:1)\n\n'+shareMsg()),'_blank'); };
 
-// True 3D Book Interaction
 const bk=$('#book'), st=$('#stage'); let fp=0, rx=0, ry=-15;
 const setBk=()=>bk.style.transform=`rotateX(${rx}deg) rotateY(${fp?180+ry:ry}deg)`;
 $$('.tg button').forEach(b=>b.onclick=()=>{
@@ -754,7 +748,6 @@ st.addEventListener('pointermove',e=>{
 st.addEventListener('pointerleave',()=>{ rx=0; ry=-15; setBk(); });
 setBk();
 
-// 3D Tilt Cards (desktop)
 if(matchMedia('(hover:hover)').matches){
   $$('.tilt').forEach(c=>{
     c.addEventListener('pointermove',e=>{
@@ -765,7 +758,6 @@ if(matchMedia('(hover:hover)').matches){
   });
 }
 
-// Reveal & Counters
 const io=new IntersectionObserver(es=>es.forEach(e=>{
   if(!e.isIntersecting)return;
   e.target.classList.add('in'); io.unobserve(e.target);
@@ -780,7 +772,6 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{
 }),{threshold:.14});
 $$('.rv,.cn').forEach(el=>io.observe(el));
 
-// Scroll River + Top Progress Bar
 const tl=$('#tl'), fl=$('#fl'), sp=$('#sp');
 function sc(){
   const docH = document.documentElement.scrollHeight - innerHeight;
@@ -791,7 +782,6 @@ function sc(){
 }
 addEventListener('scroll',sc,{passive:true}); addEventListener('resize',sc); sc();
 
-// Reading Tracker
 let readMap = {};
 try{ readMap = JSON.parse(get('readStages')||'{}'); }catch(e){}
 function syncRead(){
@@ -810,12 +800,10 @@ $$('.chk-btn').forEach(b=>b.onclick=()=>{
   syncRead();
 });
 
-// Lightbox
 function openLb(src){ if(!src)return; const lb=$('#lb'); lb.firstChild.src=src; lb.classList.add('on'); }
 $$('.gal img').forEach(i=>i.onclick=()=>openLb(i.src));
 addEventListener('keydown',e=>e.key=='Escape'&&$('#lb').classList.remove('on'));
 
-// YouTube Video Loader (16:9 Launch & 9:16 Shorts)
 function setupVideo(boxId, btnId, ytId){
   const box=$(boxId), btn=$(btnId);
   if(ytId){
@@ -832,7 +820,6 @@ function setupVideo(boxId, btnId, ytId){
 setupVideo('#vidLaunch','#playLaunch', CFG.ytLaunch);
 setupVideo('#vidReel','#playReel', CFG.ytReel);
 
-// Gold Particles
 const cv=$('#pc'), cx=cv.getContext('2d'); let P=[];
 function rs(){
   cv.width=cv.offsetWidth; cv.height=cv.offsetHeight;
